@@ -11,6 +11,7 @@ public class Outlander extends Car{
     }
 
     //since car is auto, we need an accelerate method for this car to enable it change gear
+    //this can be a method even applied in the car class for other specific vehicles to inherit
     public void accelerate(int rate){
         int newVelocity = getCurrentVelocity() + rate;
         if(newVelocity == 0){
